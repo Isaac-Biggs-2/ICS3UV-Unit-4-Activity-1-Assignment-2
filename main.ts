@@ -2,19 +2,21 @@
  * @author Isaac Biggs
  * @version 1.0.0
  * @date 2025-14-12
- * @fileoverview This program will display a patter of numbers in a right angled triangle
+ * @fileoverview This program will display a pattern of numbers in a right angled triangle
 */
 
 //variables
-let rows: number = 5;
+let rows = prompt("How many rows do you want?")
 
 //creates and displays the triangle
-for (let i = 1; i <= rows; i++) {
+for (let triangle1 = 1; triangle1 <= rows; triangle1++) {
   let line: string = "";
 
-  for (let j = 1; j <= i; j++) {
-    line += j;
+  for (let triangle2 = 1; triangle2 <= triangle1; triangle2++) {
+    line += triangle2;
   }
 
   console.log(line);
 }
+
+console.log("\nDone.")
